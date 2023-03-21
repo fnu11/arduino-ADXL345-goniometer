@@ -78,6 +78,8 @@ void loop() {
   Serial.print(Y_out);
   Serial.print("   Za= ");
   Serial.println(Z_out);*/ 
+ 
+  pr1 = atan2(Y_out, X_out) * 180 / PI + 90;
     
   u8g.firstPage();  
   do {
